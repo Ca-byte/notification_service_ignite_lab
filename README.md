@@ -36,14 +36,14 @@ Developed during Rocketseat Education's Ignite Lab Classes ([@rocketseat-educati
 
 ## Features ##
 
-:heavy_check_mark: Create notification;\
-:heavy_check_mark: List notification recipient by id;\
-:heavy_check_mark: Count notifications from recipient id;\
-:heavy_check_mark: Get recipient data from notification id;\
-:heavy_check_mark: Cancel notification by id;\
-:heavy_check_mark: Mark notification as read;\
-:heavy_check_mark: Mark notification as unread;\
-:heavy_check_mark: Persist information to database;
+:bellhop_bell: Create notification;\
+:bellhop_bell: List notification recipient by id;\
+:bellhop_bell: Count notifications from recipient id;\
+:bellhop_bell: Get recipient data from notification id;\
+:bellhop_bell: Cancel notification by id;\
+:bellhop_bell: Mark notification as read;\
+:bellhop_bell: Mark notification as unread;\
+:bellhop_bell: Persist information to database;\
 
 **Note:**
 Database options to persist data <https://www.prisma.io/docs/concepts/database-connectors#overview>
