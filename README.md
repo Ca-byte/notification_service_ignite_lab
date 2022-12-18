@@ -9,7 +9,7 @@
   <a href="#features">Features</a> &#xa0; | &#xa0;
   <a href="#technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#how to run the project">How to run the project</a> &#xa0; | &#xa0;
+  <a href="#how-to-run-the-project">How to run the project</a> &#xa0; | &#xa0;
   <a href="#license">License</a> &#xa0; | &#xa0;
 </p>
 
@@ -22,7 +22,7 @@
 
 <br>
 
-## 💻 Project
+## Project ##
 
 This project aims to create and manage a notifications microservice in an organized and well-structured way.
 We learned the particularities of the NestJS framework integrated with Prisma such as ORM, domain, use cases, business rules, SOLID and automated tests, we connected all layers of our application, we created routes, controllers, validations.
@@ -48,7 +48,7 @@ Developed during Rocketseat Education's Ignite Lab Classes ([@rocketseat-educati
 **Note:**
 Database options to persist data <https://www.prisma.io/docs/concepts/database-connectors#overview>
 
-## 🚀 Technologies ##
+## Technologies ##
 
 The following tools were used in this project:
 
@@ -58,11 +58,19 @@ The following tools were used in this project:
 - [Prisma](https://www.prisma.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 
+### Other tools ###
+
+- [Upstash](https://upstash.com/)
+    - - Create new Cluster
+    - - Insert a name
+    - - Select a region
+    - - Click Create to continue
+
 ## Requirements ##
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
-## ⌨ How to run the project ##
+## How to run the project ##
 
 - Access your terminal
 - Execute commands bellow:
