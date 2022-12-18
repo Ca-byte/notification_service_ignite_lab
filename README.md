@@ -61,10 +61,10 @@ The following tools were used in this project:
 ### Other tools ###
 
 - [Upstash](https://upstash.com/)
-    - - Create new Cluster
-    - - Insert a name
-    - - Select a region
-    - - Click Create to continue
+    - Create new Cluster
+    - Insert a name
+    - Select a region
+    - Click Create to continue
 
 ## Requirements ##
 
