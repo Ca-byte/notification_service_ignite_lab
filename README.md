@@ -1,74 +1,142 @@
+<div align="center" id="top">
+<p>
+  <img alt="" src="./public/logo-ignite-lab-nodejs.svg">
+</p>
+
+<br>
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="#project">Project</a> &#xa0; | &#xa0;
+  <a href="#features">Features</a> &#xa0; | &#xa0;
+  <a href="#technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#how to run the project">How to run the project</a> &#xa0; | &#xa0;
+  <a href="#license">License</a> &#xa0; | &#xa0;
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<br>
+  <img src="./public/ignite-lab-insomnia.png" width="1100px" alt="Notifications Service" />
+</div>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+---
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<br>
 
-## Installation
+## 💻 Project
 
-```bash
-$ npm install
+This project aims to create and manage a notifications microservice in an organized and well-structured way.
+We learned the particularities of the NestJS framework integrated with Prisma such as ORM, domain, use cases, business rules, SOLID and automated tests, we connected all layers of our application, we created routes, controllers, validations.
+In addition to working with the NestJS dependency injection concept, we learned the factory concept.
+
+:fire: In the After Ignite Lab extra class, we were introduced to Asynchronous Communication using Apache Kafka.
+
+Speechless for the quality of the event!
+
+Developed during Rocketseat Education's Ignite Lab Classes ([@rocketseat-education](https://github.com/rocketseat-education))
+
+## Features ##
+
+:heavy_check_mark: Create notification;\
+:heavy_check_mark: List notification recipient by id;\
+:heavy_check_mark: Count notifications from recipient id;\
+:heavy_check_mark: Get recipient data from notification id;\
+:heavy_check_mark: Cancel notification by id;\
+:heavy_check_mark: Mark notification as read;\
+:heavy_check_mark: Mark notification as unread;\
+:heavy_check_mark: Persist information to database;
+
+**Note:**
+Database options to persist data <https://www.prisma.io/docs/concepts/database-connectors#overview>
+
+## 🚀 Technologies ##
+
+The following tools were used in this project:
+
+- [Node.js](https://nodejs.org/)
+- [Nest.js](https://nestjs.com/)
+- [Jest.js](https://jestjs.io/)
+- [Prisma](https://www.prisma.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## ⌨ How to run the project ##
+
+- Access your terminal
+- Execute commands bellow:
+
+  ```bash
+  # clone project
+  $ git clone git@github.com:Ca-byte/notification_service_ignite_lab.git
+
+  # Access project folder 
+  cd notifications-service
+  ```
+
+- Access [here](README-NESTJS.md) and follow steps to continue
+
+## The server will initialize in the <http://localhost:3000>
+
+## Routes application ##
+
+- Create (POST): <http://localhost:3000/notifications>
+
+```json
+
+{
+ "recipientId": "96ac3bda-94d7-4a7c-8a19-2f05357c16be",
+ "content": "Cabyte, added you as a friend",
+ "category": "social"
+}
+
 ```
 
-## Running the app
+- Count from recipient (GET): <http://localhost:3000/notifications/count/from/96ac3bda-94d7-4a7c-8a19-2f05357c16be>
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+```json
+{
+  "count": 2
+}
 ```
 
-## Test
+- Get content from recipient (GET): <http://localhost:3000/notifications/from/96ac3bda-94d7-4a7c-8a19-2f05357c16be>
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+```json
+{
+  "notifications": [
+    {
+      "id": "e44e7c26-8939-4d22-8834-c539ba2d0949",
+      "content": "Cabyte, added you as a friend.",
+      "category": "social",
+      "recipientId": "96ac3bda-94d7-4a7c-8a19-2f05357c16be"
+    },
+    {
+      "id": "e92af443-40fd-4c86-90a2-069a4cd3b9bf",
+      "content": "Cabyte, added you as a friend.",
+      "category": "social",
+      "recipientId": "96ac3bda-94d7-4a7c-8a19-2f05357c16be"
+    }
+  ]}
 ```
 
-## Support
+- Cancel notification (PATCH): <http://localhost:3000/notifications/96ac3bda-94d7-4a7c-8a19-2f05357c16be-2f05357c16be/cancel>
+- Mark as read notification (PATCH): <http://localhost:3000/notifications/96ac3bda-94d7-4a7c-8a19-2f05357c16be-2f05357c16be/read>
+- Mark as unread notification (PATCH): <http://localhost:3000/notifications/96ac3bda-94d7-4a7c-8a19-2f05357c16be-2f05357c16be/unread>
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## License ##
 
-## Stay in touch
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+---
 
-## License
 
-Nest is [MIT licensed](LICENSE).
-# notification_service_ignite_lab
+<br>
+
+<p align="center">Developed with 💜 by Caroline Vieira</p>
+
+
+
+<a href="#top">☝</a>
+
